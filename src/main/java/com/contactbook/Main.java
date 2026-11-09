@@ -8,9 +8,13 @@ public class Main {
         Contact person2 = new Contact("Minami","0921314","minami314@gmail.com");
         Contact person3 = new Contact("Makoto","0922334","makoto334@gmail.com");
 
-        System.out.println(person1);
-        System.out.println(person2);
-        System.out.println(person3);
+        ContactBook contactbook1 = new ContactBook();
+        contactbook1.addContact(person1);
+        contactbook1.addContact(person2);
+        contactbook1.addContact(person3);
+        contactbook1.listAll();
+
+        System.out.println(contactbook1.searchContact("Su Su"));
 
     }
 
